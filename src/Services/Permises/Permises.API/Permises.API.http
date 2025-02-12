@@ -1,0 +1,6 @@
+@Permises.API_HostAddress = http://localhost:5027
+
+GET {{Permises.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

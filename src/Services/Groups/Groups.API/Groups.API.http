@@ -1,0 +1,6 @@
+@Groups.API_HostAddress = http://localhost:5289
+
+GET {{Groups.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

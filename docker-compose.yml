@@ -1,0 +1,20 @@
+services:
+  modules.api:
+    image: ${DOCKER_REGISTRY-}modulesapi
+    build:
+      context: .
+      dockerfile: src/Services/Modules/Modules.API/Dockerfile
+
+  permises.api:
+    image: ${DOCKER_REGISTRY-}permisesapi
+    build:
+      context: .
+      dockerfile: src/Services/Permises/Permises.API/Dockerfile
+
+
+  gateway.api:
+    image: ${DOCKER_REGISTRY-}gatewayapi
+    build:
+      context: .
+      dockerfile: src/Services/Gateway/Gateway.API/Dockerfile
+
